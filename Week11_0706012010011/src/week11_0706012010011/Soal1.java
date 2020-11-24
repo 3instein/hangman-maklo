@@ -13,7 +13,6 @@ import java.util.Random;
  * @author reyna
  */
 public class Soal1 {
-    
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         Random rand = new Random();
@@ -51,7 +50,7 @@ public class Soal1 {
                     if(answer.charAt(i) == ' '){
                         question += " ";
                     } else {
-                        question += "*";
+                        question += "_ ";
                     }
                 }
                 for(int i = 1; i <= 50; i++){
@@ -71,7 +70,7 @@ public class Soal1 {
                     if(answer.charAt(i) == ' '){
                         question += " ";
                     } else {
-                        question += "*";
+                        question += "_ ";
                     }
                 }
                 for(int i = 1; i <= 50; i++){
@@ -93,12 +92,14 @@ public class Soal1 {
                     loop = 1;
                     continue;
                 }
+                int counter = 0;
                 for(int i = 0; i < answer.length(); i++){
                     if(guess.charAt(0) == answer.charAt(i)){
-                        question = question.substring(0, i) + guess + question.substring(i + 1);
+                        question = question.substring(0, i + counter) + guess + question.substring(i + counter + 1);
                         loop = 1;
                         correct++;
                     }
+                    counter++;
                 }
                 System.out.println(question);
                 if(correct > 0){
@@ -136,7 +137,7 @@ public class Soal1 {
                                             if (answer.charAt(i) == ' ') {
                                                 question += " ";
                                             } else {
-                                                question += "*";
+                                                question += "_ ";
                                             }
                                         }
                                         for (int i = 1; i <= 50; i++) {
@@ -206,12 +207,14 @@ public class Soal1 {
                     loop = 1;
                     continue;
                 }
+                int counter = 0;
                 for(int i = 0; i < answer.length(); i++){
                     if(guess.charAt(0) == answer.charAt(i)){
-                       question = question.substring(0, i) + guess + question.substring(i + 1);
+                       question = question.substring(0, i + counter) + guess + question.substring(i + counter + 1);
                        loop = 1;
                        correct++;
                     }
+                    counter++;
                 }
                 System.out.println(question);
                 if(correct > 0){
@@ -249,7 +252,7 @@ public class Soal1 {
                                             if (answer.charAt(i) == ' ') {
                                                 question += " ";
                                             } else {
-                                                question += "*";
+                                                question += "_ ";
                                             }
                                         }
                                         for (int i = 1; i <= 50; i++) {
@@ -272,7 +275,7 @@ public class Soal1 {
                                             if (answer.charAt(i) == ' ') {
                                                 question += " ";
                                             } else {
-                                                question += "*";
+                                                question += "_ ";
                                             }
                                         }
                                         for (int i = 1; i <= 50; i++) {
@@ -310,16 +313,5 @@ public class Soal1 {
                 System.out.println(question);
             }
         }
-//        String input = "_ _ _ _";
-//        input = input.substring(0, 0) + 't' + input.substring(1);
-//        input = input.substring(0, 2) + 'a' + input.substring(3);
-//        input = input.substring(0, 4) + 'h' + input.substring(5);
-//        input = input.substring(0, 6) + 'u' + input.substring(7);
-//        
-//        System.out.println(input);;
-//        0,1
-//        2,3
-//        4,5
-
     }
 }
