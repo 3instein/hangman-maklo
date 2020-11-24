@@ -48,7 +48,7 @@ public class Soal1 {
                 turn = 1;
                 for(int i = 0; i < answer.length(); i++){
                     if(answer.charAt(i) == ' '){
-                        question += " ";
+                        question += "  ";
                     } else {
                         question += "_ ";
                     }
@@ -135,7 +135,7 @@ public class Soal1 {
                                         turn = 1;
                                         for (int i = 0; i < answer.length(); i++) {
                                             if (answer.charAt(i) == ' ') {
-                                                question += " ";
+                                                question += "  ";
                                             } else {
                                                 question += "_ ";
                                             }
@@ -250,7 +250,7 @@ public class Soal1 {
                                         turn = 1;
                                         for (int i = 0; i < answer.length(); i++) {
                                             if (answer.charAt(i) == ' ') {
-                                                question += " ";
+                                                question += "  ";
                                             } else {
                                                 question += "_ ";
                                             }
@@ -273,7 +273,7 @@ public class Soal1 {
                                         turn = 0;
                                         for (int i = 0; i < answer.length(); i++) {
                                             if (answer.charAt(i) == ' ') {
-                                                question += " ";
+                                                question += "  ";
                                             } else {
                                                 question += "_ ";
                                             }
